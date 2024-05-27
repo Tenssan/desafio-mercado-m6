@@ -1,0 +1,14 @@
+<div class="col-md-4">
+  <div class="card">
+    <div class="d-flex justify-content-center align-items-center" style="height: 200px;">
+      <img src="/images/{{name}}.png" class="card-img-top img-fluid" alt="{{name}}" style="max-height: 200px; max-width: 200px;">
+    </div>
+    <div class="card-body text-center">
+      <h5 class="card-title">{{name}}</h5>
+      <form action="/add-to-cart" method="post">
+        <input type="hidden" name="product" value="{{name}}">
+        <button type="submit" class="btn btn-primary">Add to Cart</button>
+      </form>
+    </div>
+  </div>
+</div>
